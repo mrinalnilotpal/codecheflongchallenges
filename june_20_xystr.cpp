@@ -6,18 +6,24 @@ using namespace std;
 int main()
 {
     int t,i;
+    cin>> t;
+    
     for(i=1 ; i<=t ; i++)
     {
-        int n;
-        
+        int n = 100000,j;
         int count = 0;
-        char s[] = cin >> ; 
-        n = strlen(s)
+        char s[n] ;
         
-        int j=1;
+        for(j = 1;j<n;j++)
+        {
+            cin>>s[j];
+        }
+        
+        char x,y;
+
         while(j<=n)
         {
-            if((s[j]=="x" && s[j+1]=="y") || (s[j]=="y" && s[j+1] =="x" ))
+            if((s[j]== x && s[j+1]== y) || (s[j]== y && s[j+1] == x ))
             {
                 count += 1;
                 j = j+2;
