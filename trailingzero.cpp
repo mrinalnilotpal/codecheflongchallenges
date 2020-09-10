@@ -5,17 +5,17 @@ using namespace std;
 
 int main()
 {
-    long long int n,i,coun,remainder;
+long long int n,i;
+long long int coun=0;
 
-    cin >> n;
 
 
-    i = 1;
-    while(remainder>=1)
-    {
-        remainder = n/(pow(5,i));
-        coun +=remainder;
-        i = i+1;
-    }
-    cout<< coun ;
+cin>>n;
+
+for(i=5;n/i>=1;i=i*5)
+{
+    coun += n/i;
+}
+cout<<coun;
+
 }
